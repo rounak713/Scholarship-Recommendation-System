@@ -888,9 +888,11 @@ function openTab(tabId) {
     document.querySelectorAll(".tab-button").forEach((btn) =>
         btn.classList.remove("active")
     );
-    Array.from(document.querySelectorAll(".tab-button")).find(
-        (btn) => btn.textContent.replace(/\s/g, '').toLowerCase().includes(tabId)
-    )?.classList.add("active");
+    document.querySelectorAll(".tab-button").forEach((btn) => {
+        if (btn.dataset.tab === tabId) {
+            btn.classList.add("active");
+        }
+    });
     
     // Load analytics when analytics tab is opened
     if (tabId === 'analytics') {
@@ -1688,8 +1690,8 @@ function populateLinks() {
 }
 
 function updateLinksStats() {
-    const totalCount = scholarships.length;
-    const activeCount = scholarships.filter(s => {
+    const totalCount = filteredScholarships.length;
+    const activeCount = filteredScholarships.filter(s => {
         const deadline = new Date(s.deadline);
         const today = new Date();
         return deadline > today;
@@ -2132,6 +2134,7 @@ function applyFilters(searchTerm = '') {
     
     currentLinksPage = 1; // Reset to first page
     displayLinks();
+    updateLinksStats();
 }
 
 function clearAllFilters() {
@@ -2144,6 +2147,7 @@ function clearAllFilters() {
     filteredScholarships = [...scholarships];
     currentLinksPage = 1;
     displayLinks();
+    updateLinksStats();
 }
 
 function setLinksView(view) {
@@ -2181,6 +2185,7 @@ function sortLinks() {
     
     currentLinksPage = 1;
     displayLinks();
+    updateLinksStats();
 }
 
 function loadMoreLinks() {
@@ -2636,3 +2641,6 @@ function addSavedScholarshipsTab() {
         document.getElementById('tempContainer').id = 'recommendedScholarships';
     }
 }
+
+window.addEventListener('DOMContentLoaded', initializeEnhancedFeatures);
+
