@@ -3383,3 +3383,825 @@ footer p {
     border-radius: 15px;
     border: 1px solid rgba(0, 255, 210, 0.2);
 }
+
+/* ================================ */
+/* COMPREHENSIVE DEVICE OPTIMIZATION */
+/* ================================ */
+
+/* Extra Small Phones: 320px - 479px */
+@media screen and (max-width: 479px) {
+    :root {
+        font-size: 14px;
+    }
+    
+    body {
+        font-size: 0.875rem;
+    }
+    
+    .navbar {
+        padding: 0.75rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .nav-container {
+        padding: 0 0.75rem;
+    }
+    
+    .nav-brand {
+        font-size: 1.1rem;
+    }
+    
+    .nav-brand i {
+        margin-right: 0.35rem;
+    }
+    
+    .hero {
+        padding: 60px 1rem 2rem;
+        min-height: 70vh;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.75rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin: 0.75rem 0 1.25rem;
+    }
+    
+    .hero-stats {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .stat {
+        flex: 0 1 auto;
+        padding: 0.75rem;
+    }
+    
+    .stat-number {
+        font-size: 1.25rem;
+    }
+    
+    .stat-label {
+        font-size: 0.7rem;
+    }
+    
+    .hero-visual {
+        display: none;
+    }
+    
+    .main-tabs .tabs-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tab-button {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+        flex: 0 0 auto;
+    }
+    
+    .main-content {
+        padding: 1rem 0.75rem;
+    }
+    
+    .content-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .enhanced-search-container {
+        padding: 0.75rem;
+        border-radius: 0.75rem;
+    }
+    
+    .enhanced-search-input {
+        padding: 0.675rem 0.5rem 0.675rem 2rem;
+        font-size: 0.85rem;
+        border-radius: 0.5rem;
+    }
+    
+    .search-icon {
+        left: 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .advanced-filters {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .filter-select {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        min-height: 40px;
+    }
+    
+    .reset-filters-btn {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        min-height: 40px;
+    }
+    
+    .scholarship-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.75rem;
+    }
+    
+    .card-header {
+        gap: 0.5rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .card-header h3 {
+        font-size: 0.95rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+    }
+    
+    .card-content {
+        gap: 0.5rem;
+        font-size: 0.8rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .card-actions {
+        gap: 0.5rem;
+    }
+    
+    .apply-btn, .share-btn, .save-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+        min-height: 40px;
+        flex: 1;
+    }
+    
+    .scholarship-form {
+        padding: 1rem 0.75rem;
+        border-radius: 0.75rem;
+    }
+    
+    .form-group {
+        margin-bottom: 0.75rem;
+    }
+    
+    .form-group label {
+        font-size: 0.8rem;
+    }
+    
+    .form-group select,
+    .form-group input {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        min-height: 40px;
+    }
+    
+    .search-button {
+        padding: 0.675rem 1rem;
+        font-size: 0.85rem;
+        min-height: 40px;
+    }
+    
+    .stats-overview {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .stat-card h4 {
+        font-size: 1.25rem;
+    }
+    
+    .footer {
+        padding: 2rem 0.75rem;
+    }
+    
+    .footer-content {
+        gap: 1.5rem;
+    }
+}
+
+/* Small Phones: 480px - 767px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    :root {
+        font-size: 15px;
+    }
+    
+    body {
+        font-size: 0.9rem;
+    }
+    
+    .hero {
+        padding: 80px 1.25rem 2.5rem;
+        min-height: 75vh;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.25rem;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin: 1rem 0 1.5rem;
+    }
+    
+    .hero-stats {
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .stat {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 1.75rem;
+    }
+    
+    .stat-label {
+        font-size: 0.8rem;
+    }
+    
+    .hero-visual {
+        display: none;
+    }
+    
+    .main-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .content-header h2 {
+        font-size: 1.75rem;
+    }
+    
+    .enhanced-search-container {
+        padding: 1rem;
+    }
+    
+    .enhanced-search-input {
+        padding: 0.7rem 0.75rem 0.7rem 2.25rem;
+        font-size: 0.9rem;
+        min-height: 40px;
+    }
+    
+    .advanced-filters {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .filter-select {
+        padding: 0.65rem 0.75rem;
+        font-size: 0.85rem;
+        min-height: 42px;
+    }
+    
+    .scholarship-card {
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .card-content {
+        font-size: 0.85rem;
+    }
+    
+    .apply-btn, .share-btn, .save-btn {
+        padding: 0.65rem 1rem;
+        font-size: 0.8rem;
+        min-height: 42px;
+    }
+    
+    .scholarship-form {
+        padding: 1.25rem 1rem;
+    }
+    
+    .form-group select,
+    .form-group input {
+        padding: 0.65rem 0.75rem;
+        font-size: 0.9rem;
+        min-height: 42px;
+    }
+    
+    .search-button {
+        padding: 0.7rem 1.25rem;
+        font-size: 0.9rem;
+        min-height: 42px;
+    }
+    
+    .stats-overview {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    .stat-card h4 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablets and Medium Devices: 768px - 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    :root {
+        font-size: 16px;
+    }
+    
+    body {
+        font-size: 0.95rem;
+    }
+    
+    .hero {
+        padding: 100px 2rem 3rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.75rem;
+    }
+    
+    .hero-visual {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    .floating-card {
+        padding: 1.5rem;
+        width: 140px;
+    }
+    
+    .main-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .content-header h2 {
+        font-size: 2.25rem;
+    }
+    
+    .enhanced-search-container {
+        padding: 1.5rem;
+    }
+    
+    .advanced-filters {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .scholarship-card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .card-header h3 {
+        font-size: 1.3rem;
+    }
+    
+    .card-content {
+        font-size: 0.95rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .card-actions {
+        gap: 0.75rem;
+    }
+    
+    .apply-btn, .share-btn, .save-btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.9rem;
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .stat-card h4 {
+        font-size: 1.75rem;
+    }
+    
+    .scholarship-form {
+        padding: 1.5rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small Desktops: 1024px - 1365px */
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    :root {
+        font-size: 16px;
+    }
+    
+    .hero {
+        padding: 120px 3rem 3.5rem;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+    
+    .main-content {
+        padding: 2.5rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .finder-container {
+        grid-template-columns: 250px 1fr;
+        gap: 2rem;
+    }
+    
+    .search-panel {
+        position: sticky;
+        top: 80px;
+        height: fit-content;
+    }
+    
+    .advanced-filters {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .scholarship-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .scholarship-card {
+        padding: 1.75rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.4rem;
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Standard Desktop: 1366px - 1439px */
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+    :root {
+        font-size: 17px;
+    }
+    
+    .hero {
+        padding: 130px 4rem 4rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 3.75rem;
+    }
+    
+    .main-content {
+        padding: 3rem 2.5rem;
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    
+    .finder-container {
+        grid-template-columns: 280px 1fr;
+    }
+    
+    .scholarship-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.25rem;
+    }
+    
+    .scholarship-card {
+        padding: 2rem;
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .content-header h2 {
+        font-size: 2.75rem;
+    }
+}
+
+/* Large Desktop: 1440px - 1919px */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    :root {
+        font-size: 18px;
+    }
+    
+    body {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        padding: 140px 5rem 5rem;
+        min-height: 85vh;
+    }
+    
+    .hero-content {
+        gap: 4rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 4.25rem;
+    }
+    
+    .hero-visual {
+        gap: 1.5rem;
+    }
+    
+    .floating-card {
+        width: 180px;
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .main-content {
+        padding: 3.5rem 3rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .content-header h2 {
+        font-size: 3rem;
+    }
+    
+    .finder-container {
+        grid-template-columns: 300px 1fr;
+        gap: 2.5rem;
+    }
+    
+    .advanced-filters {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .scholarship-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .scholarship-card {
+        padding: 2.25rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.6rem;
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .stat-card {
+        padding: 2rem;
+    }
+    
+    .stat-card h4 {
+        font-size: 2.5rem;
+    }
+    
+    .stats-overview .stat-card p {
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+}
+
+/* Ultra HD / 4K: 1920px and above */
+@media screen and (min-width: 1920px) {
+    :root {
+        font-size: 20px;
+    }
+    
+    body {
+        font-size: 1.1rem;
+    }
+    
+    .hero {
+        padding: 160px 8rem 6rem;
+        min-height: 90vh;
+    }
+    
+    .hero-content {
+        gap: 5rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.35rem;
+    }
+    
+    .hero-stats {
+        gap: 2rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-label {
+        font-size: 1.05rem;
+    }
+    
+    .floating-card {
+        width: 220px;
+        padding: 2.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .main-content {
+        padding: 4rem 4rem;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    
+    .content-header h2 {
+        font-size: 3.5rem;
+    }
+    
+    .finder-container {
+        grid-template-columns: 350px 1fr;
+        gap: 3rem;
+    }
+    
+    .enhanced-search-input {
+        font-size: 1.05rem;
+        padding: 1rem 1rem 1rem 3rem;
+        min-height: 50px;
+    }
+    
+    .scholarship-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+    
+    .scholarship-card {
+        padding: 2.75rem;
+        border-radius: 1.25rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.9rem;
+    }
+    
+    .card-content {
+        font-size: 1.05rem;
+        gap: 1rem;
+    }
+    
+    .apply-btn, .share-btn, .save-btn {
+        padding: 1rem 1.75rem;
+        font-size: 1rem;
+        min-height: 50px;
+    }
+    
+    .stats-overview {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
+    
+    .stat-card {
+        padding: 2.5rem;
+    }
+    
+    .stat-card h4 {
+        font-size: 3rem;
+    }
+    
+    .stat-card p {
+        font-size: 1.1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4rem;
+    }
+    
+    .footer-section h4 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Landscape Orientation Optimizations */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: 60vh;
+        padding: 60px 2rem 1.5rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-visual {
+        display: none;
+    }
+    
+    .main-tabs {
+        position: sticky;
+        top: 60px;
+        z-index: 100;
+    }
+}
+
+/* Print Styles for Scholarship Details */
+@media print {
+    .navbar, .footer, .card-actions, .main-tabs {
+        display: none;
+    }
+    
+    .scholarship-card {
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+        margin-bottom: 2rem;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Accessibility: High Contrast */
+@media (prefers-contrast: more) {
+    :root {
+        --text-primary: #FFFFFF;
+        --bg-color: #000000;
+        --primary-color: #0000FF;
+        --border-color: #FFFFFF;
+    }
+    
+    .scholarship-card {
+        border: 2px solid var(--border-color);
+    }
+}
+
+/* Dark Mode (respects system preference) */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: var(--bg-primary);
+        color: var(--text-primary);
+    }
+}
+
+/* Light Mode Support (if system prefers) */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #F3F4F6;
+        --bg-primary: #FFFFFF;
+        --bg-secondary: #F9FAFB;
+        --text-primary: #1F2937;
+    }
+}
