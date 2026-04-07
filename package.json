@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "EduPath - Scholarship Discovery Platform",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^50.41.0"
+  }
 }
