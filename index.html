@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPath - Smart Scholarship Discovery</title>
+    <meta name="description" content="Discover personalized scholarship opportunities with AI-powered recommendations">
+    <meta name="keywords" content="scholarships, education, funding, students, grants">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduPath</span>
+            </div>
+            <div class="nav-menu">
+                <button class="info-btn" onclick="showInfo()" aria-label="About EduPath">
+                    <i class="fas fa-info-circle"></i>
+                </button>
+                <button class="nav-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Discover Your Perfect <span class="highlight">Scholarship</span></h1>
+                <p class="hero-subtitle">AI-powered recommendations to unlock educational opportunities worldwide</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">70+</span>
+                        <span class="stat-label">Scholarships</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">16</span>
+                        <span class="stat-label">Countries</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">$12M+</span>
+                        <span class="stat-label">Available Funding</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <i class="fas fa-search"></i>
+                    <span>Smart Search</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Analytics</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-bookmark"></i>
+                    <span>Save & Track</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Navigation Tabs -->
+    <nav class="main-tabs">
+        <div class="tabs-container">
+            <button class="tab-button active" onclick="openTab('intro')" data-tab="intro">
+                <i class="fas fa-home"></i>
+                <span>Overview</span>
+            </button>
+            <button class="tab-button" onclick="openTab('finder')" data-tab="finder">
+                <i class="fas fa-search"></i>
+                <span>Find Scholarships</span>
+            </button>
+            <button class="tab-button" onclick="openTab('analytics')" data-tab="analytics">
+                <i class="fas fa-chart-bar"></i>
+                <span>Analytics</span>
+            </button>
+            <button class="tab-button" onclick="openTab('links')" data-tab="links">
+                <i class="fas fa-external-link-alt"></i>
+                <span>All Links</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- Overview Section -->
+        <section id="intro" class="tab-content active">
+            <div class="content-header">
+                <h2>Why Choose EduPath?</h2>
+                <p class="section-subtitle">Breaking barriers to educational funding through intelligent matching</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Matching</h3>
+                    <p>Advanced algorithms analyze your profile to find the most relevant scholarship opportunities</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Opportunities</h3>
+                    <p>Access scholarships from top universities and organizations across 6+ countries</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Real-time Updates</h3>
+                    <p>Stay informed with deadline alerts and new scholarship notifications</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Verified Sources</h3>
+                    <p>All scholarships are verified and sourced from official institutions and organizations</p>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h3>Ready to find your perfect scholarship?</h3>
+                <button class="cta-button" onclick="openTab('finder')">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Search
+                </button>
+            </div>
+        </section>
+
+        <!-- Scholarship Finder -->
+        <section id="finder" class="tab-content">
+            <div class="content-header">
+                <h2>Find Your Scholarships</h2>
+                <p class="section-subtitle">Use our smart filters to discover opportunities tailored to your profile</p>
+            </div>
+            
+            <div class="finder-container">
+                <div class="search-panel">
+                    <form id="studentForm" class="scholarship-form">
+                        <div class="form-group">
+                            <label for="education">
+                                <i class="fas fa-graduation-cap"></i>
+                                Education Level
+                            </label>
+                            <select id="education" name="education" required>
+                                <option value="">Select your level</option>
+                                <option value="highschool">High School</option>
+                                <option value="undergraduate">Undergraduate</option>
+                                <option value="postgraduate">Postgraduate</option>
+                                <option value="phd">PhD</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="field">
+                                <i class="fas fa-book"></i>
+                                Field of Study
+                            </label>
+                            <input type="text" id="field" name="field" placeholder="e.g., Engineering, Medicine, Business" autocomplete="off">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="country">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Preferred Country
+                            </label>
+                            <select id="country" name="country" required>
+                                <option value="">Select a country</option>
+                                <option value="India">🇮🇳 India</option>
+                                <option value="USA">🇺🇸 United States</option>
+                                <option value="UK">🇬🇧 United Kingdom</option>
+                                <option value="Canada">🇨🇦 Canada</option>
+                                <option value="Germany">🇩🇪 Germany</option>
+                                <option value="Australia">🇦🇺 Australia</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search"></i>
+                            Find Scholarships
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="results-panel">
+                    <div id="recommendedScholarships" class="scholarships-grid"></div>
+                </div>
+            </div>
+        </section>
+
+    
+        <!-- Analytics Dashboard -->
+        <section id="analytics" class="tab-content">
+            <div class="content-header">
+                <h2>Scholarship Analytics</h2>
+                <p class="section-subtitle">Insights and trends in scholarship opportunities</p>
+            </div>
+            
+            <div class="analytics-dashboard">
+                <div id="analyticsFeedback" class="stats-overview"></div>
+                
+                <div class="visualization-container">
+                    <div class="chart-controls">
+                        <button class="chart-btn active" onclick="showVisualization('country')">By Country</button>
+                        <button class="chart-btn" onclick="showVisualization('category')">By Category</button>
+                        <button class="chart-btn" onclick="showVisualization('education')">By Education</button>
+                        <button class="chart-btn" onclick="showVisualization('timeline')">Timeline View</button>
+                    </div>
+                    <div id="dataVisualization" class="data-visualization">
+                        <!-- Dynamic visualization content will be inserted here -->
+                    </div>
+                </div>
+                
+                <div class="insights-panel">
+                    <h3>Key Insights</h3>
+                    <div class="insight-cards">
+                        <div class="insight-card">
+                            <i class="fas fa-trending-up"></i>
+                            <div>
+                                <h4>Growing Opportunities</h4>
+                                <p>STEM scholarships have increased by 25% this year</p>
+                            </div>
+                        </div>
+                        <div class="insight-card">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Upcoming Deadlines</h4>
+                                <p>12 scholarships closing within the next 30 days</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- All Scholarship Links -->
+        <section id="links" class="tab-content">
+            <div class="content-header">
+                <h2>All Scholarship Opportunities</h2>
+                <p class="section-subtitle">Browse our complete database of verified scholarships</p>
+            </div>
+            
+            <div class="links-container">
+                <div class="links-header">
+                    <div class="links-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="totalLinksCount">0</span>
+                            <span class="stat-label">Total Scholarships</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="activeLinksCount">0</span>
+                            <span class="stat-label">Active Opportunities</span>
+                        </div>
+                    </div>
+                    
+                    <div class="links-search">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="linksSearchInput" placeholder="Search scholarships..." onkeyup="searchLinks()">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="links-filters">
+                    <div class="filter-group">
+                        <label><i class="fas fa-globe"></i> Country:</label>
+                        <select id="countryFilter" onchange="filterLinks()">
+                            <option value="">All Countries</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label><i class="fas fa-tags"></i> Category:</label>
+                        <select id="categoryFilterLinks" onchange="filterLinks()">
+                            <option value="">All Categories</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label><i class="fas fa-graduation-cap"></i> Education Level:</label>
+                        <select id="educationFilter" onchange="filterLinks()">
+                            <option value="">All Levels</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label><i class="fas fa-clock"></i> Deadline:</label>
+                        <select id="deadlineFilter" onchange="filterLinks()">
+                            <option value="">All Deadlines</option>
+                            <option value="urgent">Urgent (30 days)</option>
+                            <option value="soon">Soon (60 days)</option>
+                            <option value="later">Later (90+ days)</option>
+                        </select>
+                    </div>
+                    <button class="clear-filters-btn" onclick="clearAllFilters()">
+                        <i class="fas fa-times"></i> Clear Filters
+                    </button>
+                </div>
+                
+                <div class="links-view-controls">
+                    <div class="view-toggle">
+                        <button class="view-btn active" onclick="setLinksView('grid')" data-view="grid">
+                            <i class="fas fa-th"></i> Grid
+                        </button>
+                        <button class="view-btn" onclick="setLinksView('list')" data-view="list">
+                            <i class="fas fa-list"></i> List
+                        </button>
+                    </div>
+                    <div class="sort-controls">
+                        <label>Sort by:</label>
+                        <select id="sortLinks" onchange="sortLinks()">
+                            <option value="deadline">Deadline</option>
+                            <option value="name">Name</option>
+                            <option value="country">Country</option>
+                            <option value="amount">Amount</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="scholarshipLinks" class="links-grid"></div>
+                
+                <div class="links-pagination">
+                    <button id="loadMoreBtn" onclick="loadMoreLinks()" class="load-more-btn">
+                        <i class="fas fa-plus"></i> Load More Scholarships
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-brand">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>EduPath</span>
+                </div>
+                <p>Empowering students worldwide with AI-driven scholarship discovery</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#" onclick="openTab('intro')">Overview</a></li>
+                    <li><a href="#" onclick="openTab('finder')">Find Scholarships</a></li>
+                    <li><a href="#" onclick="openTab('analytics')">Analytics</a></li>
+                    <li><a href="#" onclick="openTab('links')">All Links</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Stay Updated</h4>
+                <p>Get notified about new scholarships</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 EduPath. All rights reserved. | Made with ❤️ for students worldwide</p>
+        </div>
+    </footer>
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading scholarships...</p>
+    </div>
+    
+    <script src="./script.js" defer></script>
+</body>
+</html>

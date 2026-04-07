@@ -1,0 +1,24 @@
+# Ignore development files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Ignore documentation files (optional)
+README.md
+*.md
+
+# Ignore version control
+.git
+.gitignore
+
+# Ignore IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Ignore any build artifacts
+dist/
+build/
+node_modules/
