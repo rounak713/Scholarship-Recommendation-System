@@ -1,55 +1,5 @@
 {
-  "version": 2,
-  "public": true,
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
-  "framework": "static",
-  "env": {},
-  "regions": ["auto"],
-  "functions": {},
   "routes": [
-    {
-      "src": "/",
-      "dest": "/index.html",
-      "methods": ["GET", "HEAD"]
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html",
-      "methods": ["GET", "HEAD"]
-    }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "redirects": [],
-  "rewrites": [],
-  "headers": [
-    {
-      "source": "/",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=3600"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    }
+    { "src": "/", "dest": "/index.html" }
   ]
 }

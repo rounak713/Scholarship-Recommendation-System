@@ -1,31 +1,9 @@
 {
-  "name": "edupath-scholarship-system",
+  "name": "edupath",
   "version": "1.0.0",
   "private": true,
-  "description": "EduPath - Smart Scholarship Discovery Platform with AI-powered recommendations",
-  "author": "Rounak Kukreja",
+  "description": "EduPath - Scholarship Discovery Platform",
   "license": "MIT",
-  "homepage": "https://github.com/rounak713/Scholarship-Recommendation-System",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rounak713/Scholarship-Recommendation-System.git"
-  },
-  "keywords": [
-    "scholarships",
-    "education",
-    "funding",
-    "student-grants",
-    "educational-opportunities"
-  ],
-  "scripts": {
-    "dev": "python -m http.server 3000 --directory .",
-    "build": "echo 'Static site, no build needed'",
-    "start": "python -m http.server 8000 --directory .",
-    "preview": "python -m http.server 5000 --directory ."
-  },
-  "engines": {
-    "node": "16.x"
-  },
   "devDependencies": {
     "vercel": "^50.41.0"
   }
